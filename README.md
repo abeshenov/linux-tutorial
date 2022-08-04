@@ -78,3 +78,6 @@ To get back to the same container, we do
 ```
 $ docker start -i eloquent_brattain
 ```
+
+We will continue working in that container, setting up and exploring our Linux
+system.
