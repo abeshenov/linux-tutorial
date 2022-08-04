@@ -98,7 +98,6 @@ This is why software developers should be familiar with some basics of Linux
 and command line, no matter what operating system they use on their personal
 machine.
 
-
 ### Basic terms
 
 - **[UNIX](https://en.wikipedia.org/wiki/Unix)**: operating system released in
@@ -122,7 +121,6 @@ machine.
 
 - **GNU/Linux distribution**: comes with Linux kernel, GNU software, plus
   additional software, and usually a package manager.
-
 
 ### Some distributions
 
@@ -181,6 +179,14 @@ Debian Bullseye.
   this will print to standard output files `file1.txt`, `file2.txt`, etc.
   concatenated.
 
+The following files contain information about the Debian version:
+
+- `/etc/debian_version`
+- `/etc/issue`
+- `/etc/os-release`
+
+Here is how to print them with `cat`:
+
 ```
 user@cosmos:~$ cat /etc/issue
 Debian GNU/Linux 11 \n \l
@@ -203,4 +209,3 @@ HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 ```
-
