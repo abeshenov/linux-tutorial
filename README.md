@@ -1,12 +1,11 @@
 # GNU/Linux Tutorial
 
+![awk? grep? sed? pwd!](awk-grep-sed-pwd.png)
+
 In this tutorial we are going to cover some basics of GNU/Linux systems,
 working from the command line. We'll start with some basic commands,
 structure of the file system, file permissions, and so on... There will be
 probably two sessions of one hour each.
-
-- [**Part I**: Basics](basics.md)
-- To be continued...
 
 
 ## Part 0: Setup a Docker image
