@@ -19,7 +19,7 @@ C-w : delete previous word
 C-y : paste what we cut (yank)
 C-r : reverse history search (C-r for more)
 
-C-c	: send SIGINT to the running process
+C-c : send SIGINT to the running process
 C-d : send end-of-file symbol to console
 C-z : stop running process (use `fg` to resume)
 
@@ -70,13 +70,13 @@ ln -s <source> <target> : create symlink
 
 touch foo.txt : change modification time / create file
 
-cat foo.txt bar.txt ... : concatenate files
+cat foo.txt [bar.txt ...] : concatenate files
 
-less foo.txt            : view contents interactively
+less foo.txt              : view contents interactively
 
-head foo.txt            : view first lines
+head foo.txt              : view first lines
 
-tail foo.txt            : view last lines
+tail foo.txt              : view last lines
     -f, --follow : output appended data as the file grows
 
 find : find files in a directory
@@ -129,12 +129,12 @@ passwd [LOGIN]
 useradd --create-home --shell /bin/bash newuser	add user
     -m, --create-home
     -s, --shell SHELL
-    -G, --groups GROUP1[,GROUP2,...[,GROUPN]]]
+    -G, --groups GROUP[,GROUP2,...]
 
 usermod -aG GROUP USER
     -a, --append
     -d, --home HOME_DIR
-    -G, --groups GROUP1[,GROUP2,...[,GROUPN]]]
+    -G, --groups GROUP[,GROUP2,...]
     -l, --login NEW_LOGIN
     -s, --shell SHELL
     -L, --lock
@@ -176,7 +176,7 @@ Create:
 
 List contents:
     unzip -l files.zip
-    tar -tvf files.tar.bz2	list contents
+    tar -tvf files.tar.bz2
 
 Extract:
     unzip files.zip -d /path/to/unzip
