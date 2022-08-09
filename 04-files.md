@@ -28,32 +28,7 @@ Change: 2022-08-05 17:45:16.247327091 +0000
 
 ---
 
-## Stat output
-
-- **Size**: file size in bytes.
-
-- **Device**, e.g. `40h/64d` : device number in hex and decimal.
-
-- **Blocks**: number of 512-byte blocks allocated;
-  **IO Block**: IO block size.
-
-- **Inode**: data structure representing a file + metadata,
-  accessed by number.
-
-- **File type**: e.g. `regular file`, `directory`.
-
-- **Access rights**: will discuss later.
-
----
-
-## Time reported by stat ⌚
-
-| Time             | Meaning                                                   |
-|------------------|-----------------------------------------------------------|
-| **Access**       | last file access/read                                     |
-| **Modification** | last modification of contents                             |
-| **Change**       | last modification of inode (permissions, ownership, name) |
-| **Birth**        | file creation                                             |
+![stat output](stat.png)
 
 ---
 

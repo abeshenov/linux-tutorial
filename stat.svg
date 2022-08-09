@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="514.89606mm"
+   height="193.58389mm"
+   viewBox="0 0 514.89606 193.58389"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="stat.svg"
+   inkscape:export-filename="/home/abeshenov/linux-tutorial/stat.png"
+   inkscape:export-xdpi="150.01358"
+   inkscape:export-ydpi="150.01358">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.3445098"
+     inkscape:cx="1283.3143"
+     inkscape:cy="343.14663"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1358"
+     inkscape:window-height="705"
+     inkscape:window-x="19"
+     inkscape:window-y="13"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(191.20786,-320.3819)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.95559;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1374"
+       width="538.6886"
+       height="213.26384"
+       x="-205.69035"
+       y="309.92545" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="-191.20786"
+       y="373.88971"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="-191.20786"
+         y="373.88971"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;">$ stat /etc/shadow</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="387.25601"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan14">  File: /etc/shadow</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="400.62231"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan16">  Size: 671             Blocks: 8          IO Block: 4096   regular file</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="413.98862"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan18">Device: 40h/64d Inode: 10857       Links: 1</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="427.35492"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan20">Access: (0640/-rw-r-----)  Uid: (    0/    root)   Gid: (   42/  shadow)</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="440.72122"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan22">Access: 2022-08-05 17:50:36.095309399 +0000</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="454.08752"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan24">Modify: 2022-08-05 17:45:16.236327091 +0000</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="467.45383"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan26">Change: 2022-08-05 17:45:16.247327091 +0000</tspan><tspan
+         sodipodi:role="line"
+         x="-191.20786"
+         y="480.82013"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';stroke-width:0.264583;fill:#ffffff;"
+         id="tspan28"> Birth: 2022-08-05 17:45:16.236327091 +0000</tspan></text>
+    <rect
+       id="rect30"
+       width="100.19693"
+       height="14.941874"
+       x="76.313942"
+       y="389.08585"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3"
+       width="67.137039"
+       height="15.253958"
+       x="-42.568512"
+       y="388.58875"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-6"
+       width="82.354462"
+       height="15.175991"
+       x="185.86491"
+       y="388.8197"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-6-7"
+       width="30.449175"
+       height="15.800252"
+       x="-146.1687"
+       y="389.17957"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-5"
+       width="50.899708"
+       height="15.498616"
+       x="216.95897"
+       y="417.11636"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-3"
+       width="39.11348"
+       height="15.52478"
+       x="77.354385"
+       y="416.3833"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-56"
+       width="45.83596"
+       height="13.143381"
+       x="-52.048195"
+       y="403.65448"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-56-2"
+       width="49.055138"
+       height="12.84356"
+       x="-142.52057"
+       y="404.92383"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       id="rect30-3-56-2-9"
+       width="109.58362"
+       height="11.959085"
+       x="-141.54918"
+       y="418.20963"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#2c89a0;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="-169.64986"
+       y="328.70038"
+       id="text1006"><tspan
+         sodipodi:role="line"
+         id="tspan1004"
+         x="-169.64986"
+         y="328.70038"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';fill:#2c89a0;stroke-width:0.264583;">size in bytes</tspan></text>
+    <path
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -130.45341,333.66575 0.57988,55.34131 v 0 z"
+       id="path1008"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="-4.2624016"
+       y="352.28348"
+       id="text1006-1"><tspan
+         sodipodi:role="line"
+         id="tspan1004-2"
+         x="-4.2623997"
+         y="352.28348"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;">512-byte blocks</tspan><tspan
+         sodipodi:role="line"
+         x="-4.2624011"
+         y="365.64978"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034">allocated</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -7.6995355,388.65773 -0.341959,-20.13051"
+       id="path1056"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="125.11157"
+       y="349.1962"
+       id="text1006-1-0"><tspan
+         sodipodi:role="line"
+         id="tspan1004-2-9"
+         x="125.11157"
+         y="349.1962"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;">IO block size</tspan><tspan
+         sodipodi:role="line"
+         x="125.11157"
+         y="362.5625"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3">in bytes</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.33843,388.22093 -0.34196,-20.13051"
+       id="path1056-6"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="228.09799"
+       y="363.20508"
+       id="text1006-1-0-0"><tspan
+         sodipodi:role="line"
+         x="228.09799"
+         y="363.20508"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3-2">file type</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 226.98285,387.32285 -0.34196,-20.13051"
+       id="path1056-6-6"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="252.10847"
+       y="413.76736"
+       id="text1006-1-0-0-1"><tspan
+         sodipodi:role="line"
+         x="252.10847"
+         y="413.76736"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3-2-8">group</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="102.66532"
+       y="414.27338"
+       id="text1006-1-0-0-1-9"><tspan
+         sodipodi:role="line"
+         x="102.66532"
+         y="414.27338"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3-2-8-2">owner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="188.73428"
+       y="415.23419"
+       id="text1006-1-0-0-1-2"><tspan
+         sodipodi:role="line"
+         x="188.73428"
+         y="415.23419"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583"
+         id="tspan1034-3-2-8-3">group ID</tspan></text>
+    <rect
+       id="rect30-3-3-5"
+       width="39.11348"
+       height="15.52478"
+       x="28.715897"
+       y="416.3833"
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="53.713833"
+       y="381.45248"
+       id="text1006-1-0-0-1-9-9"><tspan
+         sodipodi:role="line"
+         x="53.713833"
+         y="381.45248"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3-2-8-2-2">owner user ID</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.3817,385.38736 0.04446,30.755"
+       id="path1056-6-6-7-0-2"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="-91.537392"
+       y="499.3295"
+       id="text1006-1-0-0-1-9-9-3"><tspan
+         sodipodi:role="line"
+         x="-91.537392"
+         y="499.3295"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1034-3-2-8-2-2-6">access rights</tspan><tspan
+         sodipodi:role="line"
+         x="-91.537392"
+         y="512.6958"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1372">(oct / human)</tspan></text>
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -91.533527,488.12289 -0.80696,-57.10248"
+       id="path1056-6-6-7-0-2-1"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="-89.483337"
+       y="345.96426"
+       id="text1006-2"><tspan
+         sodipodi:role="line"
+         id="tspan1004-9"
+         x="-89.483337"
+         y="345.96426"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;fill-opacity:1;">device ID</tspan><tspan
+         sodipodi:role="line"
+         x="-89.483337"
+         y="359.33057"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';text-align:center;text-anchor:middle;fill:#37abc8;stroke-width:0.264583;fill-opacity:1;"
+         id="tspan1322">(hex / dec)</tspan></text>
+    <path
+       style="fill:none;stroke:#37abc8;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -101.87791,363.53 0.73588,40.98482 v 0 z"
+       id="path1008-3"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       x="90.506927"
+       y="441.74063"
+       id="text1346"><tspan
+         sodipodi:role="line"
+         id="tspan1344"
+         x="90.506927"
+         y="441.74063"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';fill:#37abc8;stroke-width:0.264583;">last file access/read</tspan><tspan
+         sodipodi:role="line"
+         x="90.506927"
+         y="455.10693"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1348">last modification of contents</tspan><tspan
+         sodipodi:role="line"
+         x="90.506927"
+         y="468.47324"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1350">last modification of inode (metadata)</tspan><tspan
+         sodipodi:role="line"
+         x="90.506927"
+         y="481.83954"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono';fill:#37abc8;stroke-width:0.264583;"
+         id="tspan1352">file creation</tspan></text>
+  </g>
+</svg>
