@@ -4,7 +4,7 @@
 
 - Run our `debian-playground` image in Docker.
 
-- You will see the Bash prompt:
+- You will see the **Bash** prompt:
 
 ```
 user@cosmos:~$ ▮
@@ -37,6 +37,30 @@ Hello, user!
 | `history` | command history       |
 | `exit`    | exit the shell        |
 | `logout`  | log out of the shell  |
+
+Command history is stored in `.bash_history` in your home dir.
+
+---
+
+## Builtins vs. external commands
+
+- `type <command>` : command type.
+- `whereis <name>` : find binary by name.
+
+```
+user@cosmos:~$ type cd 
+cd is a shell builtin
+user@cosmos:~$ whereis cd
+cd:
+```
+
+```
+user@cosmos:~$ type --all ls
+ls is aliased to `ls --color=auto'
+ls is /bin/ls
+user@cosmos:~$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+```
 
 ---
 
@@ -75,15 +99,7 @@ concatenated.
 
 ---
 
-## Files with information about the Debian version 🏷
-
-- `/etc/debian_version`
-- `/etc/issue`
-- `/etc/os-release`
-
-Print them with `cat`.
-
----
+## See something with cat
 
 ```
 user@cosmos:~$ cat /etc/issue

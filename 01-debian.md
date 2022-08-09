@@ -14,11 +14,6 @@
 
 ---
 
-Software developers should be familiar with some basics of Linux and command
-line, no matter what operating system they use on their personal machine.
-
----
-
 ![awk? grep? sed? pwd!](awk-grep-sed-pwd.png)
 
 ---
@@ -52,8 +47,8 @@ line, no matter what operating system they use on their personal machine.
 
 ## A few distributions 📦
 
-- **Distribution** comes with
-  * Linux kernel,
+- A **distribution** comes with
+  * custom Linux kernel build,
   * GNU software,
   * additional software,
   * package manager.
@@ -70,43 +65,16 @@ line, no matter what operating system they use on their personal machine.
  
 ---
 
-## 🔥 Our choice is Debian 🔥
+## Our choice is Debian
 
----
+- Versions
 
-## Versions #️⃣
+  |              | Packages  | Stability     |
+  |--------------|-----------|---------------|
+  | **Stable**   | 😒 older  | 🙂 stable     |
+  | **Testing**  | 😐        | 😐            |
+  | **Unstable** | 🙂 latest | 😒 not tested |
 
-|              | Packages  | Stability     |
-|--------------|-----------|---------------|
-| **Stable**   | 😒 older  | 🙂 stable     |
-| **Testing**  | 😐        | 😐            |
-| **Unstable** | 🙂 latest | 😒 not tested |
+- Current stable:
 
----
-
-## Code names 🧸
-
-### "Toy Story" characters
-
-|            | Name       | Year |
-|------------|------------|------|
-| Version 8  | "Jessie"   | 2015 |
-| Version 9  | "Stretch"  | 2017 |
-| Version 10 | "Buster"   | 2019 |
-| Version 11 | "Bullseye" | 2021 |
-| Unstable   | "Sid"      |      |
-
----
-
-## Bullseye 🐂
-
-![Bullseye](bullseye.png)
-
----
-
-## Useful links 🔗
-
-- [debian.org](https://debian.org/)
-- [packages.debian.org](https://packages.debian.org/stable/)
-- [Docker images](https://hub.docker.com/_/debian)
-- [AMIs for AWS](https://wiki.debian.org/Cloud/AmazonEC2Image/Bullseye)
+  Version 11 "Bullseye" (2021)

@@ -36,11 +36,13 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 
 ## Permissions ✅
 
-|     | Permission | For files                | For directories               |
-|-----|------------|--------------------------|-------------------------------|
-| `r` | read       | read contents            | list files inside             |
-| `w` | write      | modify contents          | create, rename, delete files  |
-| `x` | execute    | execute binary or script | enter the directory with `cd` |
+|     | Permission | Regular files   | Directories                  |
+|-----|------------|-----------------|------------------------------|
+| `r` | read       | read contents   | list files inside            |
+| `w` | write      | modify contents | create, rename, delete files |
+| `x` | execute    | execute         | enter with `cd`              |
+
+Set `x` only on executable files (binaries, scripts) and directories.
 
 ---
 
@@ -77,18 +79,14 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 
 ```
 user@cosmos:/usr/local/lib$ stat /usr/bin
-  File: /usr/bin
-  Size: 3442            Blocks: 0          IO Block: 4096   directory
-Device: 43h/67d Inode: 783         Links: 1
 Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
-Access: 2022-08-06 01:11:02.277443816 +0000
-Modify: 2022-08-06 00:41:08.919538334 +0000
-Change: 2022-08-06 00:41:08.919538334 +0000
- Birth: 2022-08-04 05:37:16.647535882 +0000
+         │ │  │ │  │  └── all: r-x
+         │ │  │ │  └── group: r-x
+         │ │  │ └── owner: rwx
+         │ │  └── file type: (d)irectory
+         │ └── 755 = rwxr-xr-x
+   "sticky bit" = 0
 ```
-
-- File type `d` (directory).
-- Owner `rwx`, group `r-x`, others `r-x`.
 
 ---
 
@@ -96,17 +94,33 @@ Change: 2022-08-06 00:41:08.919538334 +0000
 
 | Character | Type                     |
 |-----------|--------------------------|
-| `-`       | Regular file             |
-| `d`       | Directory                |
-| `l`       | Symbolic link            |
-| `c`       | Character special device |
-| `b`       | Block special device     |
+| `-`       | regular file             |
+| `d`       | directory                |
+| `l`       | symbolic link            |
+| `c`       | character special device |
+| `b`       | block special device     |
 | `p`       | FIFO                     |
-| `s`       | Socket                   |
+| `s`       | socket                   |
 
 ---
 
-## Examples 📂
+## Examples
+
+- `666` = `rw-rw-rw-`
+
+  Permission of the beast: anyone can read and modify the file.
+
+- `644` = `rw-r--r--`
+
+  Owner can read and modify; others can read.
+
+- `755` = `rwxr-xr-x`
+
+  Directory is read-only, except for the owner.
+
+---
+
+## Real examples 📂
 
 | File          | Permissions         |
 |---------------|---------------------|
@@ -132,6 +146,27 @@ Access: (0755/-rwxr-xr-x)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
 user@cosmos:~$ chmod 666 test.txt 
 user@cosmos:~$ stat test.txt 
 Access: (0666/-rw-rw-rw-)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
+```
+
+---
+
+## What is the default? 🤔
+
+- `umask` : print file mode mask.
+- `umask 022` : set file mode mask.
+- Default permissions:
+  - `666` − `umask` for regular files,
+  - `777` − `umask` for directories.
+
+```
+user@cosmos:~$ umask
+0022
+user@cosmos:~$ touch test.txt
+user@cosmos:~$ mkdir test
+user@cosmos:~$ ls -1l
+total 0
+drwxr-xr-x 1 user user 0 Aug  8 20:11 test
+-rw-r--r-- 1 user user 0 Aug  8 20:11 test.txt
 ```
 
 ---

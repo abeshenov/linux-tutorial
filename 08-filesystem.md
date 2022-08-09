@@ -33,19 +33,19 @@ opt/   root/  sbin/  sys/    usr/
 ## Binaries ⚙
 
 ```
-├── 📂 bin    ⟵ essential binaries available to all users
-│   ├── ⚙ bash     ⟵ some basic commands
+├── 📂 bin    ← essential binaries available to all users
+│   ├── ⚙ bash     ← some basic commands
 │   ├── ⚙ date
 │   ├── ⚙ mv
 │   ├── ⚙ rm
 │   ├── ⚙ tar
 │   └── ...     
 │
-├── 📁 sbin  ⟵ system binaries available to root
-│             (boot, recovery, etc.)
+├── 📁 sbin  ← system binaries available to root
+│              (boot, recovery, etc.)
 │
-└── 📂 usr   ⟵ data shared between users
-    ├── 📂 bin   ⟵ user commands
+└── 📂 usr   ← data shared between users
+    ├── 📂 bin   ← user commands
     │   ├── ⚙ apt
     │   ├── ⚙ curl
     │   ├── ⚙ less
@@ -55,7 +55,7 @@ opt/   root/  sbin/  sys/    usr/
     │
     └── 📂 local
         │
-        └── 📁 bin   ⟵ binaries for local installation
+        └── 📁 bin   ← binaries for local installation
 ```
 
 ---
@@ -63,11 +63,11 @@ opt/   root/  sbin/  sys/    usr/
 ## Libraries 📚
 
 ```
-├── 📁 lib       ⟵ libraries: shared objects = SO,
-├── 📁 lib64         kernel modules, etc.
-│                 (like DLLs in Windows)
+├── 📁 lib       ← libraries: shared objects = SO,
+├── 📁 lib64       kernel modules, etc.
+│                  (like DLLs in W*ndows)
 └── 📂 usr
-    ├── 📁 lib       ⟵ user libraries
+    ├── 📁 lib       ← user libraries
     │
     └── 📂 local
         │
@@ -79,11 +79,11 @@ opt/   root/  sbin/  sys/    usr/
 ## Home directories 🏡
 
 ```
-├── 📂 home   ⟵ user home directories
+├── 📂 home   ← user home directories
 │   ├── 📁 user   (user's data, installations, configurations)
 │   └── ...
 │
-└── 📁 root   ⟵ root's home
+└── 📁 root   ← root's home
 ```
 
 ---
@@ -93,16 +93,16 @@ opt/   root/  sbin/  sys/    usr/
 ### devfs managed by kernel
 
 ```
-└── 📂 dev   ⟵ device files
-    ├── 🌟 null      ⟵ null-device (discards data)
+└── 📂 dev   ← device files
+    ├── 🌟 null      ← null-device (discards data)
     ├── 📂 pts
-    │   ├── 🌟 0     ⟵ pseudoterminal connected to standard input
+    │   ├── 🌟 0     ← pseudoterminal connected to standard input
     │   └── ...
     │
-    ├── 🌟 random    ⟵ (pseudo)random byte source, blocks when out of entropy
-    ├── 🌟 tty       ⟵ current console (TeleTYpewriter)
-    ├── 🌟 urandom   ⟵ (pseudo)random byte source, non-blocking (unlimited)
-    ├── 🌟 zero      ⟵ provides zero-characters 0x00
+    ├── 🌟 random    ← (pseudo)random byte source, blocks when out of entropy
+    ├── 🌟 tty       ← current console (TeleTYpewriter)
+    ├── 🌟 urandom   ← (pseudo)random byte source, non-blocking (unlimited)
+    ├── 🌟 zero      ← provides zero-characters 0x00
     └── ...
 ```
 
@@ -111,21 +111,21 @@ opt/   root/  sbin/  sys/    usr/
 ## Info managed by kernel 📝
 
 ```
-├── 📂 proc   ⟵ processes
-│   ├── 📝 cpuinfo   ⟵ CPU info
-│   ├── 📝 meminfo   ⟵ memory info
-│   ├── 📝 version   ⟵ kernel version
+├── 📂 proc   ← processes
+│   ├── 📝 cpuinfo   ← CPU info
+│   ├── 📝 meminfo   ← memory info
+│   ├── 📝 version   ← kernel version
 │   │
-│   └── 📂 {pid}   ⟵ directory attached to process ID
-│       ├── 📝 cmdline   ⟵ command that started the process
-│       ├── 📝 cws       ⟵ symlink to the current working dir
-│       ├── 📝 environ   ⟵ environment variables
-│       ├── 📝 exe       ⟵ symbolic link to the executable
-│       ├── 📝 fg        ⟵ directory with file descriptors
-│       ├── 📝 stat      ⟵ status of the process
+│   └── 📂 {pid}   ← directory attached to process ID
+│       ├── 📝 cmdline   ← command that started the process
+│       ├── 📝 cws       ← symlink to the current working dir
+│       ├── 📝 environ   ← environment variables
+│       ├── 📝 exe       ← symbolic link to the executable
+│       ├── 📝 fg        ← directory with file descriptors
+│       ├── 📝 stat      ← status of the process
 │       └── ...
 │
-└── 📁 sys   ⟵ information about devices, drivers, and kernel
+└── 📁 sys   ← information about devices, drivers, and kernel
 ```
 
 ---
@@ -133,11 +133,11 @@ opt/   root/  sbin/  sys/    usr/
 ## Temporary data ⏳
 
 ```
-├── 📁 run   ⟵ run-time variable data; cleared on boot
+├── 📁 run   ← run-time variable data; cleared on boot
 │
-└── 📁 tmp   ⟵ temporary files,
-             may be created by everyone,
-             don't persist
+└── 📁 tmp   ← temporary files,
+               may be created by everyone,
+               don't persist
 ```
 
 ---
@@ -145,11 +145,11 @@ opt/   root/  sbin/  sys/    usr/
 ## /usr 👥
 
 ```
-└── 📂 usr   ⟵ data shared between users
+└── 📂 usr   ← data shared between users
     ├── 📁 bin
-    ├── 📁 include   ⟵ C header files
+    ├── 📁 include   ← C header files
     ├── 📁 lib
-    ├── 📂 local    ⟵ locally installed software
+    ├── 📂 local   ← locally installed software
     │   ├── 📁 bin
     │   ├── 📁 include
     │   ├── 📁 lib
@@ -157,14 +157,14 @@ opt/   root/  sbin/  sys/    usr/
     │   ├── 📁 src
     │   └── ...
     │
-    ├── 📂 share     ⟵ architecture-independent shared data
-    │   ├── 📁 dict    ⟵ dictionaries
-    │   ├── 📁 doc     ⟵ documentation
-    │   ├── 📁 locale  ⟵ locales
-    │   ├── 📁 man     ⟵ man pages
+    ├── 📂 share     ← architecture-independent shared data
+    │   ├── 📁 dict    ← dictionaries
+    │   ├── 📁 doc     ← documentation
+    │   ├── 📁 locale  ← locales
+    │   ├── 📁 man     ← man pages
     │   └── ...
     │
-    ├── 📁 src       ⟵ source code
+    ├── 📁 src       ← source code
     │
     └── ...
 ```
@@ -174,13 +174,13 @@ opt/   root/  sbin/  sys/    usr/
 ## Other stuff 🔮
 
 ```
-├── 📁 etc   ⟵ 'etcetera'; host-specific configuration files
+├── 📁 etc   ← 'etcetera'; host-specific configuration files
 │
-├── 📁 opt   ⟵ additional software packages
+├── 📁 opt   ← additional software packages
 │
-├── 📁 srv   ⟵ data served by the system
+├── 📁 srv   ← data served by the system
 │
-└── 📂 var   ⟵ variable data
+└── 📂 var   ← variable data
     ├── 📁 cache
     ├── 📁 lock
     ├── 📁 log
@@ -193,11 +193,11 @@ opt/   root/  sbin/  sys/    usr/
 ## Boot and file systems 🤖
 
 ```
-├── 📁 boot  ⟵ boot loader files
+├── 📁 boot  ← boot loader files
 │
-├── 📁 media   ⟵ mount points for removable devices
+├── 📁 media   ← mount points for removable devices
 │
-└── 📁 mnt     ⟵ mount points for other file systems
+└── 📁 mnt     ← mount points for other file systems
 ```
 
 ---

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GNU/Linux Tutorial. Part I: Basics</title>
+
+		<meta name="description" content="Introduction to Linux and command line">
+		<meta name="author" content="Alexey Beshenov">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="custom-black.css" id="theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						# GNU/Linux Tutorial
+						## Part I: Basics
+					</textarea>
+				</section>
+
+				<section data-markdown="01-debian.md">
+                </section>
+				<section data-markdown="02-first-practice.md">
+                </section>
+				<section data-markdown="03-apt.md">
+                </section>
+				<section data-markdown="04-files.md">
+                </section>
+				<section data-markdown="05-users.md">
+                </section>
+				<section data-markdown="06-permissions.md">
+                </section>
+				<section data-markdown="07-processes.md">
+                </section>
+				<section data-markdown="08-filesystem.md">
+                </section>
+
+				<section data-markdown>
+					<textarea data-template>
+						# Next time
+
+						- IO redirection and pipelines.
+						- Pattern matching in Bash.
+						- Aliases.
+						- Variables and `$PATH`.
+						- Anatomy of scripts (shebang).
+						- `systemctl`. Let's setup and monitor nginx!
+						- Working with SSH and certificates.
+						- Anything else you want to know.
+					</textarea>
+				</section>
+            </div>
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<!--<script src="plugin/highlight/highlight.js"></script>-->
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown /*, RevealHighlight */ ]
+			});
+
+		</script>
+
+	</body>
+</html>

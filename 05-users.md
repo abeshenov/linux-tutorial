@@ -77,6 +77,7 @@ user@cosmos:~$
 | Command                                           | Action                      |
 |---------------------------------------------------|-----------------------------|
 | `useradd --create-home --shell /bin/bash newuser` | add user                    |
+| `groupadd newgroup`                               | add group                   |
 | `passwd newuser`                                  | set password                |
 | `sudo usermod -aG sudo newuser`                   | add to `sudo` group         |
 | `su newuser`                                      | login as `newuser`          |
@@ -91,6 +92,10 @@ user@cosmos:~$
 
   Can be accessed by everyone.
 
+- `/etc/group` : list of groups.
+
+  Can be accessed by everyone.
+
 - `/etc/shadow` : list of users and hashes of their passwords.
 
   Can be accessed by `root`.
@@ -99,10 +104,10 @@ user@cosmos:~$
 
 ## Practice 💪
 
-- Check `/etc/passwd` and `/etc/shadow`.
+- Check `/etc/passwd`, `/etc/group`, and `/etc/shadow`.
 - Create a new user with home directory and setup their password.
 - Add user to the `sudo` group.
-- Check `/etc/passwd` and `/etc/shadow` again.
+- Check `/etc/passwd`, `/etc/group`, and `/etc/shadow` again.
 - Login as that user with `su`.
 - Exit shell with `exit`.
 - Delete the new user.

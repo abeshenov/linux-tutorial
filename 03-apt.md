@@ -1,4 +1,4 @@
-# §3: Using APT
+# §3: Getting help with man and installing packages with APT
 
 ---
 
@@ -59,7 +59,7 @@ user@cosmos:~$ sudo apt install man-db manpages
 
 ---
 
-## Getting --help 🆘
+## --help 🆘
 
 ```
 user@cosmos:~$ tar --help
@@ -73,7 +73,7 @@ individual files from the archive.
 
 ---
 
-## Getting manual 📖
+## man 📖
 
 ```
 user@cosmos:~$ man tar
@@ -94,6 +94,40 @@ SYNOPSIS
        tar -d [-f ARCHIVE] [OPTIONS] [FILE...]
 
 . . . . .
+```
+
+---
+
+| Command             | Action                                 |
+|---------------------|----------------------------------------|
+| `whatis cat`        | short summary                          |
+| `man cat`           | show manual page                       |
+| `apropos <keyword>` | search for `<keyword>` in descriptions |
+
+---
+
+## Calendar 📆
+
+```
+user@cosmos:~$ sudo apt install ncal
+user@cosmos:~$ cal
+    August 2022       
+Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29 30 31
+```
+
+---
+
+## UUID 🤖
+
+```
+user@cosmos:~$ sudo apt install uuid-runtime
+user@cosmos:~$ uuidgen 
+050ff192-3dbf-4d32-b64a-e4a3f2bb8e72
 ```
 
 ---
@@ -123,6 +157,7 @@ Weather report: Guanajuato City, Mexico
 - GET, HEAD, POST, PUT, DELETE (`-X`).
 - Sending file contents in POST (`-d`).
 - Read `man curl`.
+- Postman is a proprietary bloat 🤮
 
 ---
 
@@ -131,33 +166,50 @@ Weather report: Guanajuato City, Mexico
 ```
 user@cosmos:~$ sudo apt install wget lzip
 . . . . .
+
 user@cosmos:~$ wget https://data.iana.org/time-zones/releases/tzdb-2022a.tar.lz
+. . . . .
+
 user@cosmos:~$ tar -xvf tzdb-2022a.tar.lz
+. . . . .
 ```
 
 ---
 
-## Old software 💩
+## Old software
+
+- Don't expect latest software versions in "stable" packages.
+
+- Especially if the Debian release cycle is slower.
+
+- Latest versions are in "unstable".
 
 ```
 user@cosmos:~$ apt info nodejs
 Package: nodejs
 Version: 12.22.12~dfsg-1~deb11u1
-Priority: optional
-Section: web
-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@alioth-lists.debian.net>
-Installed-Size: 938 kB
-Provides: node-types-node (= 12.20.55~12.22.12~dfsg-1~deb11u1)
-Depends: libc6 (>= 2.2.5), libnode72 (= 12.22.12~dfsg-1~deb11u1)
-Recommends: ca-certificates, nodejs-doc
-Suggests: npm
-Conflicts: nodejs-legacy
-Breaks: node-babel-runtime (<< 7), node-typescript-types (<< 20210110~)
-Replaces: nodejs-legacy
-Homepage: https://nodejs.org/
-Download-Size: 147 kB
-APT-Sources: http://deb.debian.org/debian-security bullseye-security/main amd64 Packages
-Description: evented I/O for V8 javascript - runtime executable
 
-N: There is 1 additional record. Please use the '-a' switch to see it
+# 18.x: current Node.js version,
+# 12.x: old, not supported anymore.
+```
+
+---
+
+## Installing from .deb files 📦
+
+- Packages are stored in `.deb` files.
+- Can be installed directly.
+- Prefix file name with `./`:
+
+```
+$ sudo apt install ./code_1.70.0-1659589288_amd64.deb
+$ apt info code
+Package: code
+Version: 1.70.0-1659589288
+Priority: optional
+Section: devel
+Maintainer: Microsoft Corporation <vscode-linux@microsoft.com>
+Installed-Size: 359 MB
+Provides: visual-studio-code
+. . . . .
 ```
