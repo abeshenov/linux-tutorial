@@ -2,9 +2,9 @@
 
 ---
 
-- Everything is a file.
-  A directory or device is also a special kind of file.
-- Common file systems: ext4, Btrfs.
+- Everything is a file, e.g. a directory or device.
+- Common file systems: **ext4**, **Btrfs**.
+- **Inode**: data structure representing contents and mertadata.
 - **Symbolic links**: pointers to files.
 - File names: 255 bytes max, case-sensitive.
 - Path separator is `/`.
@@ -183,6 +183,8 @@ cat: bar.txt: No such file or directory
 ## Finding files 🔍
 
 - `find` : finds files in a directory.
+
+- Read `man find`.
 
 - Finding file by name:
 

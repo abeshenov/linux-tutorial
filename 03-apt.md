@@ -8,7 +8,7 @@
 
 - `apt` = Advanced Package Tool.
 
-- Specific to Debian and Ubuntu.
+- Specific to Debian-based distributions.
 
 - Other systems come with their own package managers.
 

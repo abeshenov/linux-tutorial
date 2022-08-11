@@ -1,10 +1,10 @@
-== BASH COMMANDS ==
+== CONSOLE ==
 
-reset   : reset console
 clear   : clear screen
-history : command history
-exit    : exit the shell
-logout  : log out of the shell
+exit    : exit the shell (builtin)
+history : command history (builtin)
+logout  : log out of the shell (builtin)
+reset   : reset console
 
 
 == BASH KEYS ==
@@ -21,25 +21,41 @@ C-r : reverse history search (C-r for more)
 
 C-c : send SIGINT to the running process
 C-d : send end-of-file symbol to console
-C-z : stop running process (use `fg` to resume)
+C-z : stop running process (use fg/bg to resume)
 
 
 == GETTING HELP ==
 
-man
+apropos <keyword> : search for keyword in descriptions
+man <page>        : manual page
+whatis <page>     : short summary
 
 
 == FILES ==
 
-stat foo : file status
+cd foo : change directory (builtin)
 
-pwd      : print working directory
+cp foo bar : copy
+    -R, -r, --recursive
 
-cd foo/  : change directory
+df -h : disk space
+    -h, --human-readable
 
-tree     : print file tree (package tree)
+du -sh foo/ : directory size
+    -h, --human-readable
+    -s, --summarize : display only a total
 
-ls       : list files
+find : find files in a directory
+    -name <pattern> : name pattern to match
+
+head foo.txt : view first lines
+
+less foo.txt : view contents interactively
+    +/<pattern>, --pattern=<pattern> : show occurrences of <pattern>
+
+ln -s <source> <target> : create symlink
+
+ls : list files
     -1                   : one file per line
     -a, --all            : show hidden files
     -h, --human-readable : human-readable file size
@@ -47,41 +63,25 @@ ls       : list files
     -t                   : sort by time, newest first
     -r, --reverse        : reverse sort
 
-du -sh foo/ : directory size
-    -h, --human-readable
-    -s, --summarize : display only a total
-
-df -h : disk space
-    -h, --human-readable
-
-mkdir foo            : create directory
+mkdir foo : create directory
     -p, --parents : make parent directories as needed
 
 mv foo bar : move
 
-cp foo bar : copy
-    -R, -r, --recursive
+pwd : print working directory (builtin)
 
 rm foo.txt : remove
     -f, --force         : ignore  nonexistent  files
     -r, -R, --recursive : remove directories recursively
 
-ln -s <source> <target> : create symlink
+stat foo : file status
 
-touch foo.txt : change modification time / create file
-
-cat foo.txt [bar.txt ...] : concatenate files
-
-less foo.txt              : view contents interactively
-
-head foo.txt              : view first lines
-
-tail foo.txt              : view last lines
+tail foo.txt : view last lines
     -f, --follow : output appended data as the file grows
 
-find : find files in a directory
-    -name <pattern> : name pattern to match
+touch foo.txt : change modification time or create file
 
+tree : print file tree (package tree)
 
 
 == TEXT ==
@@ -89,19 +89,19 @@ find : find files in a directory
 cat file1.txt [file2.txt ...]
   concatenate
 
+diff foo1.txt foo2.txt
+
 grep [OPTION...] PATTERNS [FILE...]
     -i, --ignore-case
     -r, --recursive
 
-diff foo1.txt foo2.txt
+sed s/foo/bar/g text.txt : pattern substitution
 
 sort foo.txt
     -f, --ignore-case
     -R, --random-sort
     -r, --reverse
     -u, --unique
-
-sed s/foo/bar/g text.txt : pattern substitution
 
 wc : count
     -c, --bytes
@@ -118,6 +118,7 @@ sudo
     -u user, --user=user
 
 whoami
+
 id [USER]
 
 passwd [LOGIN]
@@ -152,9 +153,9 @@ chgrp GROUP FILE
 
 == PROCESSES ==
 
-pidof NAME
+pidof NAME : find the process ID
 
-ps : list current processes
+ps : snapshot of the current processes
     -e      : list all processes
     -C bash : processes with command bash
     -U root : processes run by root
@@ -165,22 +166,22 @@ kill PID     : sends SIGTERM by default
 killall NAME : sends SIGTERM
     -KILL : send SIGKILL
 
-top (procps package)
+top (procps package) : process monitor
 
 
 == ARCHIVES ==
 
 Create:
-    zip -r files.zip files/
     tar -czvf files.tar.gz files
-
-List contents:
-    unzip -l files.zip
-    tar -tvf files.tar.bz2
+    zip -r files.zip files/
 
 Extract:
-    unzip files.zip -d /path/to/unzip
     tar -xvf files.tar.bz2
+    unzip files.zip -d /path/to/unzip
+
+List contents:
+    tar -tvf files.tar.bz2
+    unzip -l files.zip
 
 some tar options:
     -c, --create
@@ -188,7 +189,7 @@ some tar options:
     -t, --list
     -x, --extract
 
-    compression:
+    compression methods:
         -z, --gzip
         -j, --bzip2
         -J, --xz
@@ -220,7 +221,6 @@ Sending file via PUT:
     curl -v -H 'Content-Type: application/json' -X PUT \
          --data @"file.json" http://foo.org/bar
 
-
 wget
     -O, --output-document : output file
-    -c, --continue        : continue getting a partially-downloaded file
+    -c, --continue        : continue with a partially-downloaded file
