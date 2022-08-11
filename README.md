@@ -8,7 +8,27 @@ structure of the file system, file permissions, and so on... There will be
 probably two sessions of one hour each.
 
 
-## Part 0: Setup a Docker image
+## Part I
+
+1. [GNU, Linux, and distributions](./01-debian.md)
+2. [First practice](./02-first-practice.md)
+3. [Getting help with man and installing packages with APT](./03-apt.md)
+4. [Working with files](./04-files.md)
+
+
+## Part II (tentative)
+
+- Users, groups, permissions.
+- Processes (commands `ps`, `top`, `kill`, `killall`).
+- Linux file system: what is `/bin`, `/dev`, `/boot`, `/etc`, and so on.
+- IO redirection and pipelines.
+- Pattern matching, alisases, variables, `$PATH`.
+- Anatomy of scripts: shebang.
+- Using `systemctl`. E.g. let's setup and monitor `nginx`.
+- Working with `ssh` and certificates.
+
+
+## How to setup a Docker image
 
 You might already have some UNIX-like system at hand, but we want to make sure
 that everyone has the same environment and doesn't mess with their real system.
@@ -36,8 +56,7 @@ privileges, so if you're already on Linux, it should be always `sudo docker ...`
 We want to prepare our own image that has a non-root user
 (later we'll see what that means).
 
-For this build the image from
-[debian-playground/Dockerfile](./debian-playground/Dockerfile)
+For this build the image from [debian-playground/](./debian-playground/)
 
 It is based on the `debian:bullseye` image.
 
@@ -46,7 +65,7 @@ username, and password `qwerty` with something else.
 
 Here is how you build the image:
 
-```
+```shell
 cd debian-playground
 docker build -t debian-playground .
 ```
@@ -54,8 +73,8 @@ docker build -t debian-playground .
 ### Check if everything works
 
 Now you should be able to run the new image `debian-playground` with
-```
-docker run -it --hostname cosmos debian-playground
+```shell
+docker run -it --hostname cosmos --name debian_container debian-playground
 ```
 
 You will see the command line prompt `user@cosmos:~$`.
@@ -67,18 +86,16 @@ For the moment, just type `exit` to exit the container.
 
 When we execute `exit`, our container gets stopped. To list all containers, do
 
-```
-$ docker container ls -a
-CONTAINER ID   IMAGE               COMMAND   CREATED              STATUS                      PORTS     NAMES
-26edb150fb3b   debian-playground   "bash"    About a minute ago   Exited (1) 24 seconds ago             eloquent_brattain
+```shell
+docker container ls -a
 ```
 
 This means that our `debian-playground` image is in the container named
 `eloquent_brattain`, and we are running `bash` shell in there.
 
 To get back to the same container, we do
-```
-$ docker start -i eloquent_brattain
+```shell
+docker start -i debian_container
 ```
 
 We will continue working in that container, setting up and exploring our Linux

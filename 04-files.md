@@ -4,7 +4,7 @@
 
 - Everything is a file, e.g. a directory or device.
 - Common file systems: **ext4**, **Btrfs**.
-- **Inode**: data structure representing contents and mertadata.
+- **Inode**: data structure representing contents and metadata.
 - **Symbolic links**: pointers to files.
 - File names: 255 bytes max, case-sensitive.
 - Path separator is `/`.

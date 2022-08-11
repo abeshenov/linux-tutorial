@@ -137,8 +137,8 @@ h1, h2 {
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 800px;
+  max-height: 600px
 }
 
 .reveal strong,
