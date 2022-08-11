@@ -10,6 +10,8 @@ probably two sessions of one hour each.
 
 ## Part I
 
+[All slides in one .pdf](./session-1.pdf)
+
 1. [GNU, Linux, and distributions](./01-debian.md)
 2. [First practice](./02-first-practice.md)
 3. [Getting help with man and installing packages with APT](./03-apt.md)
