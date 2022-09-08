@@ -4,8 +4,12 @@
 
 In this tutorial we are going to cover some basics of GNU/Linux systems,
 working from the command line. We'll start with some basic commands,
-structure of the file system, file permissions, and so on... There will be
-probably two sessions of one hour each.
+structure of the file system, file permissions, and so on...
+
+There will be three sessions of one hour each.
+
+
+Here's a [**command cheat sheet**](./commands.md) based on our sessions.
 
 
 ## Part I
@@ -13,10 +17,10 @@ probably two sessions of one hour each.
 [All slides in one .pdf](./session-1.pdf)
 
 <ol start="1">
-  <li>[GNU, Linux, and distributions](./01-debian.md)</li>
-  <li>[First practice](./02-first-practice.md)</li>
-  <li>[Getting help with man and installing packages with APT](./03-apt.md)</li>
-  <li>[Working with files](./04-files.md)</li>
+  <li><a href="./01-debian.md">GNU, Linux, and distributions</a></li>
+  <li><a href="./02-first-practice.md">First practice</a></li>
+  <li><a href="./03-apt.md">Getting help with man and installing packages with APT</a></li>
+  <li><a href="./04-files.md">Working with files</a></li>
 </ol>
 
 
@@ -25,11 +29,12 @@ probably two sessions of one hour each.
 [All slides in one .pdf](./session-2.pdf)
 
 <ol start="5">
-    <li>[Users and groups](./05-users.md)</li>
-    <li>[File permissions](./06-permissions.md)</li>
-    <li>[Processes](./07-processes.md)</li>
-    <li>[File system](./08-filesystem.md)</li>
+    <li><a href="./05-users.md">Users and groups</a></li>
+    <li><a href="./06-permissions.md">File permissions</a></li>
+    <li><a href="./07-processes.md">Processes</a></li>
+    <li><a href="./08-filesystem.md">File system</a></li>
 </ol>
+
 
 ## Part III (tentative)
 

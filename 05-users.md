@@ -74,15 +74,15 @@ user@cosmos:~$
 
 ## Managing users 🧰
 
-| Command                                           | Action                      |
-|---------------------------------------------------|-----------------------------|
-| `useradd --create-home --shell /bin/bash newuser` | add user                    |
-| `groupadd newgroup`                               | add group                   |
-| `passwd newuser`                                  | set password                |
-| `sudo usermod -aG sudo newuser`                   | add to `sudo` group         |
-| `su newuser`                                      | login as `newuser`          |
-| `userdel newuser`                                 | delete `newuser`            |
-| `userdel --remove newuser`                        | detete with `/home/`        |
+| Command                                           | Action               |
+|---------------------------------------------------|----------------------|
+| `useradd --create-home --shell /bin/bash newuser` | add user             |
+| `groupadd newgroup`                               | add group            |
+| `passwd newuser`                                  | set password         |
+| `sudo usermod -aG sudo newuser`                   | add to `sudo` group  |
+| `su newuser`                                      | login as `newuser`   |
+| `userdel newuser`                                 | delete `newuser`     |
+| `userdel --remove newuser`                        | delete with `/home/` |
 
 ---
 
