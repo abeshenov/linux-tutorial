@@ -113,7 +113,10 @@ less foo.txt
 Some useful options:
 * `+/<pattern>`, `--pattern=<pattern>` : highlight occurrences of `<pattern>`
 
-### `ln` : link; to create a symlink:
+### `ln` : link
+
+To create a symlink:
+
 ```shell
 ln -s <source> <target>
 ```
@@ -268,7 +271,7 @@ Some useful options:
 * `-r`, `--reverse`
 * `-u`, `--unique`
 
-##`wc` : "word count"
+### `wc` : "word count"
 
 ```shell
 wc -l foo.txt
@@ -325,7 +328,7 @@ Some useful options:
 * `-l`, `--lock`
 * `-u`, `--unlock`
 
-###`userad` : add user
+### `userad` : add user
 
 ```shell
 useradd --create-home --shell /bin/bash <username>
