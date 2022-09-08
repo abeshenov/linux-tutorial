@@ -61,6 +61,8 @@ are all files, but of different kind.
 | `tree`                 | print file tree (package `tree`)    |
 | `ls foo`               | list files in `foo`                 |
 | `cd foo`               | go to `foo` directory               |
+| `cd ..`                | go to the parent directory          |
+| `cd -`                 | go to the previous directory        |
 | `cd`                   | go to your home directory           |
 
 ---
@@ -126,7 +128,8 @@ user@cosmos:~$ ls -1a
 | `cp foo bar`           | copy `foo` to `bar`          |
 | `cp -r ./foo/ bar`     | copy directories recursively |
 | `rm foo.txt`           | delete `foo.txt`             |
-| `rm -r ./foo/`         | delete `foo` recursively     |
+| `rmdir foo`            | delete empty directory       |
+| `rm -r foo`            | delete directory recursively |
 | `ln -s source target`  | create symbolic link         |
 | `touch foo.txt`        | modify / create file         |
 

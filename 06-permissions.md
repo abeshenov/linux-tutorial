@@ -1,4 +1,4 @@
-# §6: Permissions
+# §6: File permissions
 
 ---
 
@@ -6,7 +6,7 @@
   * for security reasons,
   * not to touch data you're not supposed to.
 
-- File permissions managed on three levels:
+- Managed on three levels:
   * file owner,
   * file group,
   * everyone.
@@ -23,13 +23,13 @@
 ```
 user@cosmos:~$ touch test.txt
 user@cosmos:~$ stat test.txt 
-Access: (0644/-rw-r--r--)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
+Access: (0644/-rw-r--r--)  Uid: (1000/  user)   Gid: (1000/  user)
 user@cosmos:~$ sudo chown root test.txt 
 user@cosmos:~$ stat test.txt 
-Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: ( 1000/    user)
+Access: (0644/-rw-r--r--)  Uid: (   0/  root)   Gid: (1000/  user)
 user@cosmos:~$ sudo chgrp root test.txt 
 user@cosmos:~$ stat test.txt 
-Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: (0644/-rw-r--r--)  Uid: (   0/  root)   Gid: (   0/  root)
 ```
 
 ---
@@ -42,7 +42,7 @@ Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 | `w` | write      | modify contents | create, rename, delete files |
 | `x` | execute    | execute         | enter with `cd`              |
 
-Set `x` only on executable files (binaries, scripts) and directories.
+⚠️ Set `x` only on executable files (binaries, scripts) and directories.
 
 ---
 
@@ -79,7 +79,7 @@ Set `x` only on executable files (binaries, scripts) and directories.
 
 ```
 user@cosmos:/usr/local/lib$ stat /usr/bin
-Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: (0755/drwxr-xr-x)  Uid: (   0/  root)   Gid: (   0/  root)
          │ │  │ │  │  └── all: r-x
          │ │  │ │  └── group: r-x
          │ │  │ └── owner: rwx
@@ -106,17 +106,17 @@ Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
 
 ## Examples
 
-- `666` = `rw-rw-rw-`
+- `777` = `rwxrwxrwx` :
+  everything is permitted to everyone.
 
-  Permission of the beast: anyone can read and modify the file.
+- `666` = `rw-rw-rw-` :
+  permission of the beast, anyone can read and modify the file.
 
-- `644` = `rw-r--r--`
+- `644` = `rw-r--r--` :
+  owner can read and modify; others can read.
 
-  Owner can read and modify; others can read.
-
-- `755` = `rwxr-xr-x`
-
-  Directory is read-only, except for the owner.
+- `755` = `rwxr-xr-x` :
+  directory is read-only, except for the owner.
 
 ---
 
@@ -137,15 +137,13 @@ Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
 ```
 user@cosmos:~$ touch test.txt
 user@cosmos:~$ stat test.txt 
-Access: (0644/-rw-r--r--)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
-
+Access: (0644/-rw-r--r--)  Uid: (1000/  user)   Gid: (1000/  user)
 user@cosmos:~$ chmod +x test.txt 
 user@cosmos:~$ stat test.txt 
-Access: (0755/-rwxr-xr-x)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
-
+Access: (0755/-rwxr-xr-x)  Uid: (1000/  user)   Gid: (1000/  user)
 user@cosmos:~$ chmod 666 test.txt 
 user@cosmos:~$ stat test.txt 
-Access: (0666/-rw-rw-rw-)  Uid: ( 1000/    user)   Gid: ( 1000/    user)
+Access: (0666/-rw-rw-rw-)  Uid: (1000/  user)   Gid: (1000/  user)
 ```
 
 ---
@@ -164,7 +162,6 @@ user@cosmos:~$ umask
 user@cosmos:~$ touch test.txt
 user@cosmos:~$ mkdir test
 user@cosmos:~$ ls -1l
-total 0
 drwxr-xr-x 1 user user 0 Aug  8 20:11 test
 -rw-r--r-- 1 user user 0 Aug  8 20:11 test.txt
 ```

@@ -12,20 +12,33 @@ probably two sessions of one hour each.
 
 [All slides in one .pdf](./session-1.pdf)
 
-1. [GNU, Linux, and distributions](./01-debian.md)
-2. [First practice](./02-first-practice.md)
-3. [Getting help with man and installing packages with APT](./03-apt.md)
-4. [Working with files](./04-files.md)
+<ol start="1">
+  <li>[GNU, Linux, and distributions](./01-debian.md)</li>
+  <li>[First practice](./02-first-practice.md)</li>
+  <li>[Getting help with man and installing packages with APT](./03-apt.md)</li>
+  <li>[Working with files](./04-files.md)</li>
+</ol>
 
 
-## Part II (tentative)
+## Part II
 
-- Users, groups, permissions.
-- Processes (commands `ps`, `top`, `kill`, `killall`).
-- Linux file system: what is `/bin`, `/dev`, `/boot`, `/etc`, and so on.
+[All slides in one .pdf](./session-2.pdf)
+
+<ol start="5">
+    <li>[Users and groups](./05-users.md)</li>
+    <li>[File permissions](./06-permissions.md)</li>
+    <li>[Processes](./07-processes.md)</li>
+    <li>[File system](./08-filesystem.md)</li>
+</ol>
+
+## Part III (tentative)
+
 - IO redirection and pipelines.
 - Pattern matching, alisases, variables, `$PATH`.
 - Anatomy of scripts: shebang.
+
+Other stuff we need:
+
 - Using `systemctl`. E.g. let's setup and monitor `nginx`.
 - Working with `ssh` and certificates.
 

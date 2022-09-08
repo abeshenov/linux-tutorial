@@ -103,6 +103,7 @@ SYNOPSIS
 | `whatis cat`        | short summary                          |
 | `man cat`           | show manual page                       |
 | `apropos <keyword>` | search for `<keyword>` in descriptions |
+| `man -k <keyword>`  | same as `apropos`                      |
 
 ---
 
@@ -157,7 +158,7 @@ Weather report: Guanajuato City, Mexico
 - GET, HEAD, POST, PUT, DELETE (`-X`).
 - Sending file contents in POST (`-d`).
 - Read `man curl`.
-- Postman is a proprietary bloat 🤮
+- No need to always use Postman.
 
 ---
 

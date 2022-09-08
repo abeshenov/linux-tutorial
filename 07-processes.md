@@ -10,19 +10,20 @@
 
 ## ps: process info 📝
 
+- `sudo apt install procps` : utilities for working with processes.
+
 | Command      | Action                          |
 |--------------|---------------------------------|
 | `ps`         | list current processes          |
 | `ps -e`      | list all processes              |
 | `ps -C bash` | processes with command `bash`   |
 | `ps -U root` | processes run by `root` user    |
-| `pstree`     | process tree (package `procps`) |
+| `pstree`     | process tree                    |
 
 ---
 
 ## Monitoring processes 👁
 
-- `apt install procps`
 - `top`
 
 ```

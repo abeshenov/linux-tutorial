@@ -1,4 +1,4 @@
-# §5: Users
+# §5: Users and groups
 
 ---
 

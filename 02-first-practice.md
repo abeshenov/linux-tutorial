@@ -45,7 +45,7 @@ Command history is stored in `.bash_history` in your home dir.
 ## Builtins vs. external commands
 
 - `type <command>` : command type.
-- `whereis <name>` : find binary by name.
+- `which <name>`, `whereis <name>` : find binary by name.
 
 ```
 user@cosmos:~$ type cd 
@@ -60,6 +60,8 @@ ls is aliased to `ls --color=auto'
 ls is /bin/ls
 user@cosmos:~$ whereis ls
 ls: /bin/ls /usr/share/man/man1/ls.1.gz
+user@cosmos:~$ which ls
+/bin/ls
 ```
 
 ---

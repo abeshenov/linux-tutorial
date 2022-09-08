@@ -57,7 +57,7 @@
   [**Ubuntu**](https://ubuntu.com/),
   [**Raspberry Pi OS**](https://www.raspberrypi.com/software/);
 
-- [**Fedora**](https://getfedora.org/);
+- [**Fedora**](https://getfedora.org/), [**CentOS**](https://www.centos.org/);
   [**Arch**](https://archlinux.org/);
   [**Gentoo**](https://www.gentoo.org/);
 

@@ -160,6 +160,7 @@ opt/   root/  sbin/  sys/    usr/
     ├── 📂 share     ← architecture-independent shared data
     │   ├── 📁 dict    ← dictionaries
     │   ├── 📁 doc     ← documentation
+    │   ├── 📁 fonts   ← fonts
     │   ├── 📁 locale  ← locales
     │   ├── 📁 man     ← man pages
     │   └── ...
