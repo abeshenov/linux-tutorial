@@ -38,6 +38,8 @@ Here's a [**command cheat sheet**](./commands.md) based on our sessions.
 
 ## Part III: Bash scripting
 
+[All slides in one .pdf](./session-3.pdf)
+
 <ol start="9">
     <li><a href="./09-wildcards.md">Wildcards and patterns</a></li>
     <li><a href="./10-variables.md">Variables</a></li>
