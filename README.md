@@ -36,16 +36,16 @@ Here's a [**command cheat sheet**](./commands.md) based on our sessions.
 </ol>
 
 
-## Part III (tentative)
+## Part III: Bash scripting
 
-- IO redirection and pipelines.
-- Pattern matching, alisases, variables, `$PATH`.
-- Anatomy of scripts: shebang.
+<ol start="9">
+    <li><a href="./09-wildcards.md">Wildcards and patterns</a></li>
+    <li><a href="./10-variables.md">Variables</a></li>
+    <li><a href="./11-io-redirection.md">I/O redirection</a></li>
+    <li><a href="./12-scripting.md">Scripting basics</a></li>
+</ol>
 
-Other stuff we need:
-
-- Using `systemctl`. E.g. let's setup and monitor `nginx`.
-- Working with `ssh` and certificates.
+For script examples, see [`scripting/`](scripting/)
 
 
 ## How to setup a Docker image
