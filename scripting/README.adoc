@@ -107,6 +107,6 @@ E.g. if it uses relative paths, it can mess up files when called in an unexpecte
 
 - link:https://www.shellcheck.net/[Shell Check]
 
-- https://www.shellcheck.net/wiki/ -- common mistakes
+- link:https://www.shellcheck.net/wiki/[shellcheck.net/wiki] -- common mistakes
 
 - link:https://google.github.io/styleguide/shellguide.html[Google Shell Style Guide]
