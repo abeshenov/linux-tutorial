@@ -16,13 +16,13 @@ link:exit-status-check[Checking exit status with $?],
 link:exit-status-file-type[Script returning different status based on file type],
 
 - link:functions[Functions],
-- link:file-count[File count function function]
+link:file-count[File count function function]
 
 - link:for-loop[For loop (foreach)]
 
 - link:while-loop[While loop with condition],
-- link:infinite-loop-condition[Another while with condition],
-- link:infinite-loop[Infinite while],
+link:infinite-loop-condition[Another while with condition],
+link:infinite-loop[Infinite while],
 link:while-break[While-break],
 link:line-by-line[Processing file line by line in while loop],
 link:while-pipe[Piping to while]
