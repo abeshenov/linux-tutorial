@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# when run interactively, this can be interrupted with Ctrl+C
+
+while true; do
+    echo "Hello!"
+    sleep 1
+done

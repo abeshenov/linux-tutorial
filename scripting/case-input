@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -r -p "[y/N]? " ANSWER
+
+case "$ANSWER" in
+    [yY])  # matches 'y' and 'Y'
+        echo "You answered YES"
+    ;;
+    *)
+        echo "You didn't answer YES"
+    ;;
+esac

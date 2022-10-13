@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: ./file-type <filename>"
+fi
+
+if [[ -f $1 ]]; then
+    exit 0
+fi
+
+if [[ -d $1 ]]; then
+    exit 1
+fi
+
+exit 2
+
+# $ ./file-type /etc/passwd
+# $ echo $?
+# 0
+# $ ./file-type /etc
+# $ echo $?
+# 1
+# $ ./file-type /dev/tty 
+# $ echo $?
+# 2

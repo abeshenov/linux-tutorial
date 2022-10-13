@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Going through matching files:
+
+for f in /etc/*.conf; do
+    echo "$f"
+done

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+HOST=8.8.8.8
+
+while ping -c 1 $HOST >/dev/null; do
+    echo "Ping $HOST OK"
+    sleep 5
+done

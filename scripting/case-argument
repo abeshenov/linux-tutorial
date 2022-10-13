@@ -1,0 +1,16 @@
+#!/bin/bash
+
+case "$1" in
+    foo|FOO)  # pattern
+        echo "You have foo"
+    ;;  # end of block
+    bar|BAR)
+        echo "You have bar"
+    ;;
+    baz|BAZ)
+        echo "You have baz"
+    ;;
+    *)
+        echo "Default case"
+    ;;
+esac

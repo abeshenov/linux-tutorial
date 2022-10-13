@@ -1,0 +1,18 @@
+#!/bin/bash
+
+hello() {
+    now
+    echo "Hello, $1!"
+    TEST=Bye!
+    local LOCAL_VAR="Visible only in the function"  # local variable
+    return 0  # function return status
+}
+
+now() {
+    echo "Today is $(date +%F)"
+}
+
+hello World  # no parenthesis for function call
+
+echo $TEST  # visible
+echo $LOCAL_VAR  # invisible!!!

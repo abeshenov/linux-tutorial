@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# this is to prevent error when no file matches *.txt:
+shopt -s nullglob
+
+for f in *.txt; do
+    mv -v "$f" "$(date +%F)-$f"
+done
+
+shopt -u nullglob

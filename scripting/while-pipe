@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# piping a command to "while read ..."
+
+sed '/^\s*#/d ; /^\s*$/d' /etc/mime.types | sort -u | while read -r TYPE EXT; do
+    echo "$TYPE"
+done

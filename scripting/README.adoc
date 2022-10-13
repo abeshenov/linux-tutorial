@@ -1,0 +1,112 @@
+= Introduction to shell scripting
+
+- link:hello[Hello, World!]
+
+- link:user-input[Getting user input]
+
+- link:wildcards[Looping through files based on wildcards],
+link:wildcards-rename[Batch rename]
+
+- link:command-output[Reusing command output]
+
+- link:arguments[Using arguments] (also has an example of if-then)
+
+- link:exit-status[Returning exit status],
+link:exit-status-check[Checking exit status with $?],
+link:exit-status-file-type[Script returning different status based on file type],
+
+- link:functions[Functions],
+- link:file-count[File count function function]
+
+- link:for-loop[For loop (foreach)]
+
+- link:while-loop[While loop with condition],
+- link:infinite-loop-condition[Another while with condition],
+- link:infinite-loop[Infinite while],
+link:while-break[While-break],
+link:line-by-line[Processing file line by line in while loop],
+link:while-pipe[Piping to while]
+
+- link:case-argument[Case based on script argument],
+link:case-input[Case based on user input]
+
+
+## Good practices
+
+Sometimes we use "write only" Bash scripts that are not to be reused,
+read by anyone, or maintained. For any other scripts, we should follow
+some good practices.
+
+- Use an editor with syntax highlighting for Bash.
+
+- Use *ShellCheck*, which is a static analysis tool for Bash scripts.
+Can be integrated in
+link:https://github.com/federicotdn/flymake-shellcheck:[Emacs],
+link:https://plugins.jetbrains.com/plugin/10195-shellcheck[IntelliJ],
+link:https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck[VS Code].
+
+  * https://www.shellcheck.net/
+  * https://github.com/koalaman/shellcheck
+
+- Useful options for debugging:
+
+  * `bash -x` : print commands before execution, after expansion/substitution,
+  * `bash -v` : print commands before execution, as they are,
+  * `bash -e` : stop execution on error.
+
+An option like `x` can be toggled with `set -x` (on) and `set +x` (off).
+Combine options like `-evx`.
+
+- Don't include parameters in the shebang: prefer `#!/bin/bash` over
+`#!/bin/bash -foo`, so that the script still can be called as
+`bash script`.
+
+- For an executable script, start with an appropriate shebang
+and set executable rights. No need to use `.sh` extension.
+
+- File naming conventions for scripts: use `snake_case` or `kebab-case`,
+but be consistent.
+
+- For a library of functions, don't include shebang, don't set
+executable rights, use `.sh` extension.
+
+- After the shebang, include comments about what the script does.
+
+- Define global variables at the beginning.
+
+- Define functions after the global variables.
+
+- Each function should be accompanied by a comment with the following information:
+
+  * function purpose,
+  * list of expected arguments,
+  * list of possible return codes,
+  * whether the function writes to `STDOUT` / `STDERR`.
+
+- Use local variables inside functions.
+
+
+## Common pitfalls
+
+- Make sure your script handles correctly files:
+
+  * when filename contains spaces and other special characters,
+  * when filename starts with `-` and may be confused with a command option.
+
+As a rule of thumb, we avoid such filenames but don't hurt users who use them.
+
+- Make sure your script runs correctly if it is not called from its directory.
+E.g. if it uses relative paths, it can mess up files when called in an unexpected way.
+
+- Print error information to `STDERR` instead of `STDOUT`.
+
+
+## References
+
+- link:https://www.gnu.org/software/bash/manual/[GNU Bash manual]
+
+- link:https://www.shellcheck.net/[Shell Check]
+
+- https://www.shellcheck.net/wiki/ -- common mistakes
+
+- link:https://google.github.io/styleguide/shellguide.html[Google Shell Style Guide]

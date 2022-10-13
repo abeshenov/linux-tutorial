@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# reads data line by line from STDIN; try
+# ./line-by-line < /etc/passwd
+
+LINE_NUMBER=1
+
+while read -r LINE; do
+    echo "$LINE_NUMBER : $LINE"
+    ((LINE_NUMBER++))
+done
+
+# We could also write directly
+#
+# while read -r LINE; do
+#     echo "$LINE_NUMBER : $LINE"
+#     ((LINE_NUMBER++))
+# done < /path/to/file

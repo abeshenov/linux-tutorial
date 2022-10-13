@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DISTRO=$(lsb_release -ds)
+
+echo "$USER" is running "$DISTRO"

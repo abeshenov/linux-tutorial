@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# we can use break and continue inside loops
+
+while true; do
+    read -r -p "[1] time; [2] user; [3] uptime " CHOICE
+    case $CHOICE in
+        1)
+            date
+        ;;
+        2)
+            whoami
+        ;;
+        3)
+            uptime
+        ;;
+        *)
+            break
+        ;;
+    esac
+done

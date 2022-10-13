@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file_count() {
+    if [[ -d $1 ]]; then
+        local N
+        N=$(find "$1" -maxdepth 1 | wc -l)
+        echo "$1:"
+        echo "$N file(s)"
+    fi
+}
+
+for f in "$@"; do
+    file_count "$f"
+done

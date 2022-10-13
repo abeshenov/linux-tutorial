@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if (($# < 3)); then
+    echo "Please pass at least 3 arguments"
+    exit 1
+fi
+
+# In general, we can also have elif and else blocks
+
+echo Your zeroth argument is "$0"
+echo Your first argument is "$1"
+echo Your second argument is "$2"
+echo Your third argument is "$3"
+echo "..."
+echo Your nineth argument is "$9"
+
+echo Now all your "$#" arguments:
+
+for arg in "$@"; do
+  echo - "$arg"
+done

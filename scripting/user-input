@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -r -p "Type your name: " NAME
+
+echo Hello, "$NAME"!

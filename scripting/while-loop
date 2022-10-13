@@ -1,0 +1,8 @@
+#!/bin/bash
+
+VAR=0
+
+while ((VAR < 10)); do
+    echo $VAR
+    ((VAR++))
+done

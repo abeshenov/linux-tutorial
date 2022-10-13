@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for x in foo bar baz; do
+  echo Here goes $x
+done
+
+
+# Same using a variable:
+
+WORDS="qux quux corge"
+
+for x in $WORDS; do
+  echo Here goes "$x"
+done

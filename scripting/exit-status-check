@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cat /etc/shadow
+
+if [[ $? -ne 0 ]]; then
+    echo "Command failed"
+fi
